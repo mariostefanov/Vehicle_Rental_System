@@ -4,7 +4,19 @@ import java.math.BigDecimal;
 
 public class Motorcycle extends Vehicle {
 
-    public Motorcycle(String brand, String model, BigDecimal value) {
+    private int riderAge;
+
+    public Motorcycle(String brand, String model, BigDecimal value, int riderAge) {
         super(brand, model, value);
+        this.riderAge = riderAge;
+    }
+
+    public int getRiderAge() {
+        return riderAge;
+    }
+
+    public Motorcycle setRiderAge(int riderAge) {
+        this.riderAge = riderAge;
+        return this;
     }
 }
