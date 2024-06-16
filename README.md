@@ -1,0 +1,5 @@
+- I created an abstract Vehicle class to encapsulate common properties and methods for all vehicle types, including brand, model, value, daily rental rates for short and long-term rentals, and insurance rates.
+- I defined specific vehicle types (Motorcycle, Car, CargoVan) as subclasses of Vehicle, adding specific attributes and logic.
+- I created a Rental class to manage rental transactions. This class calculates the total rental cost based on the rental duration and includes methods to compute daily rental and insurance costs.
+- I used BigDecimal for monetary calculations to ensure accuracy in rental and insurance cost computations, avoiding issues with floating-point arithmetic.I implemented conditional logic within Rental classes to calculate rental costs based on specific business rules (daily rates for different rental periods) and adjust insurance costs based on vehicle type-specific conditions (safety ratings, rider age, driver experience).
+- I developed the Invoice class to generate and display detailed invoices, including vehicle details, rental period, daily rental and insurance costs, and total amount.
